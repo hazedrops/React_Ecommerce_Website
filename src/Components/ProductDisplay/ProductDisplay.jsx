@@ -8,7 +8,7 @@ export const ProductDisplay = (props) => {
   return (
     <div className='productdisplay'>
       <div className='productdisplay-left'>
-        <div className='productdisplay-list'>
+        <div className='productdisplay-img-list'>
           <img src={product.image} alt='' />
           <img src={product.image} alt='' />
           <img src={product.image} alt='' />
@@ -20,7 +20,7 @@ export const ProductDisplay = (props) => {
       </div>
       <div className='productdisplay-right'>
         <h1>{product.name}</h1>
-        <div className='productdisplay-right-star'>
+        <div className='productdisplay-right-stars'>
           <img src={star_icon} alt='' />
           <img src={star_icon} alt='' />
           <img src={star_icon} alt='' />
@@ -28,7 +28,7 @@ export const ProductDisplay = (props) => {
           <img src={star_dull_icon} alt='' />
           <p>(122)</p>
         </div>
-        <div className='productdisplayh-right-prices'>
+        <div className='productdisplay-right-prices'>
           <div className='productdisplay-right-price-old'>
             ${product.old_price}
           </div>
@@ -53,10 +53,10 @@ export const ProductDisplay = (props) => {
         </div>
         <button>Add To Cart</button>
         <p className='productdisplay-right-category'>
-          <span>Category :</span>Woment, T-Shirt, Crop Top
+          <span>Category:</span> Women, T-Shirt, Crop Top
         </p>
         <p className='productdisplay-right-category'>
-          <span>Tags :</span>Modern, Latest
+          <span>Tags:</span> Modern, Latest
         </p>
       </div>
     </div>
